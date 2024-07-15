@@ -22,8 +22,8 @@ Link - [Portfolio Website](https://adrijadastidar.github.io/Portfolio/)
 
 ## Screenshots
 
-![Screenshot 1](./images/p1.png)
-![Screenshot 2](./images/p2.png)
+![Screenshot 1](./Images/p1.png)
+![Screenshot 2](./Images/p2.png)
 
 ## Acknowledgements
 
