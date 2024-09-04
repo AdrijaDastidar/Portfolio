@@ -7,6 +7,7 @@ import cancion from "../../Assets/Projects/cancion.png";
 import texto from "../../Assets/Projects/texto.png";
 import readics from "../../Assets/Projects/readics.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
+import incidentintel from "../../Assets/Projects/incidentintel.png";
 import cert1 from "../../Assets/Certificates/s5.png";
 import cert2 from "../../Assets/Certificates/s6.png";
 
@@ -15,7 +16,7 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
+      <h1 className="project-heading">
           My Recent <strong className="purple">Works</strong>
         </h1>
         <div style={{ color: "white" }}>
@@ -29,15 +30,10 @@ function Projects() {
               description={
                 <>
                   <div>
-                    <ul>
-                      <li>
-                        Home Page with sections including About Me, Resume/CV,
-                        and a Gallery showcasing achievements and awards.
-                      </li>
-                      <li>
-                        Integrates seamlessly with social media platforms for
-                        enhanced connectivity.
-                      </li>
+                    <ul className="desc">
+                      <li>Features: Home Page with sections including About Me, Resume/CV, and a Gallery showcasing achievements and awards.</li>
+                      <li>Tools: Git for version control, GitHub Pages for deployment.</li>
+                      <li>Technologies: HTML, CSS, JavaScript, React.js.</li>
                     </ul>
                   </div>
                   <span
@@ -59,16 +55,10 @@ function Projects() {
               description={
                 <>
                   <div>
-                    <ul>
-                      <li>
-                        Essential features like Home Page, Navigation Bar,
-                        Search Bar, Product Listings, Shopping Cart, and
-                        Customer Service accessibility.
-                      </li>
-                      <li>
-                        Developed with Git for version control and deployed via
-                        GitHub Pages.
-                      </li>
+                    <ul className="desc">
+                      <li>Features: Home Page, Navigation Bar, Search Bar, Product Listings, Shopping Cart, Customer Service accessibility.</li>
+                      <li>Tools: Git for version control, GitHub Pages for deployment.</li>
+                      <li>Technologies: HTML, CSS, JavaScript, React.js.</li>
                     </ul>
                   </div>
                   <span
@@ -90,16 +80,10 @@ function Projects() {
               description={
                 <>
                   <div>
-                    <ul>
-                      <li>
-                        Offers robust User Authentication, CRUD Operations, an
-                        intuitive Artist Dashboard for efficient Song
-                        Management.
-                      </li>
-                      <li>
-                        Includes Backup, Audit, Language, Mood Management, and
-                        Recovery features.
-                      </li>
+                    <ul className="desc">
+                      <li>Features: User Authentication, CRUD Operations, Artist Dashboard for Song Management.</li>
+                      <li>Tools: Git for version control, GitHub Pages for deployment.</li>
+                      <li>Technologies: HTML, CSS, JavaScript, React.js, Node.js, MongoDB.</li>
                     </ul>
                   </div>
                   <span
@@ -121,16 +105,10 @@ function Projects() {
               description={
                 <>
                   <div>
-                    <ul>
-                      <li>
-                        React-based web app for text manipulation and analysis
-                        allowing case conversion, text reversal, and providing
-                        text statistics.
-                      </li>
-                      <li>
-                        Developed with Git for version control and deployed via
-                        GitHub Pages.
-                      </li>
+                    <ul className="desc">
+                      <li>Features: Text case conversion, text reversal, text statistics.</li>
+                      <li>Tools: Git for version control, GitHub Pages for deployment.</li>
+                      <li>Technologies: HTML, CSS, JavaScript, React.js.</li>
                     </ul>
                   </div>
                   <span
@@ -152,16 +130,10 @@ function Projects() {
               description={
                 <>
                   <div>
-                    <ul>
-                      <li>
-                        Web application designed to deliver real time news
-                        articles across various categories.
-                      </li>
-                      <li>
-                        Users can browse news headlines and explore different
-                        topics such as Business, Entertainment, Science, Sports,
-                        Technology, and more.
-                      </li>
+                    <ul className="desc">
+                      <li>Features: Up-to-date news articles, browsing headlines, coverage of various topics.</li>
+                      <li>Tools: Git for version control, GitHub Pages for deployment, NEWS API.</li>
+                      <li>Technologies: HTML, CSS, JavaScript, React.js.</li>
                     </ul>
                   </div>
                   <span
@@ -175,6 +147,31 @@ function Projects() {
               ghLink="https://github.com/AdrijaDastidar/Readics-React"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={incidentintel}
+              title="Real Time Threat Analysis - Incident Intel"
+              description={
+                <>
+                  <div>
+                    <ul className="desc">
+                      <li>Features: Real-time cyber incident feeds, platform identification, data collection, and analysis.</li>
+                      <li>Tools: Web scraping (Scrapy, BeautifulSoup), Git for version control.</li>
+                      <li>Technologies: Python, Natural Language Processing (NLP), MERN Stack, Apache Kafka, MongoDB.</li>
+                    </ul>
+                  </div>
+                  <span
+                    className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
+                    style={{ left: "90%", zIndex: 1 }}
+                  >
+                    June 2024
+                  </span>
+                </>
+              }
+              ghLink="https://github.com/AdrijaDastidar/Incident-Intel"
+            />
+          </Col>
           <h1 className="project-heading">
             My <strong className="purple">Experience</strong> Non-Tech
           </h1>
@@ -184,17 +181,64 @@ function Projects() {
               title="Subject Matter Expert"
               description={
                 <>
-                  <ul>
+                  <div>
+                    <ul className="desc">
+                      <li>Features: Solved over 2,000 queries in Mathematics and Python, interactive learning materials.</li>
+                      <li>Tools: Interactive platforms for query resolution, content production.</li>
+                      <li>Technologies: Mathematics, Python, Educational Technology.</li>
+                    </ul>
+                  </div>
+                  <span
+                    className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
+                    style={{ left: "90%", zIndex: 1 }}
+                  >
+                    August 2022
+                  </span>
+                </>
+              }
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cert2}
+              title="Human Resources"
+              description={
+                <>
+                  <div>
+                    <ul className="desc">
+                      <li>Features: Handled employee records, scheduled interviews, streamlined recruitment.</li>
+                      <li>Tools: Online tracking system, HR management tools.</li>
+                      <li>Technologies: Human Resources Information Systems (HRIS), Recruitment Tools.</li>
+                    </ul>
+                  </div>
+                  <span
+                    className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
+                    style={{ left: "90%", zIndex: 1 }}
+                  >
+                    August 2023
+                  </span>
+                </>
+              }
+            />
+          </Col>
+          <h1 className="project-heading">
+            My <strong className="purple">Experience</strong> Non-Tech
+          </h1>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cert1}
+              title="Subject Matter Expert"
+              description={
+                <>
+                  <ul className="desc">
                     <li>
-                      Provided in-depth expertise in Mathematics and Python
-                      programming for 11th and 12th-grade students and JEE
-                      aspirants.{" "}
+                      Solved over 2,000 real-time queries in Mathematics and
+                      Python, boosting website traffic for 11th, 12th graders{" "}
                     </li>
                     <li>
-                      Addressed real-time student queries promptly, ensuring
-                      accurate information delivery, and developed high-quality
-                      educational content to enhance learning and exam
-                      preparation.
+                      Produced interactive learning materials, boosting student
+                      satisfaction by 30% and used by 300+ educators across
+                      multiple districts.
                     </li>
                   </ul>
                   <span
@@ -213,12 +257,16 @@ function Projects() {
               title="Human Resources"
               description={
                 <>
-                  <ul>
+                  <ul className="desc">
                     <li>
-                      Performed administrative tasks and supported daily HR
-                      activities.
+                      Handled over 150 employee records and scheduled 300+
+                      interviews, supporting daily HR operations
                     </li>
-                    <li>Updated employee records and screened resumes</li>
+                    <li>
+                      Streamlined recruitment by implementing an online tracking
+                      system, reducing time-to-fill by 40% and increasing
+                      qualified applicants by 25%.
+                    </li>
                   </ul>
                   <span
                     className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"

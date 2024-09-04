@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
@@ -11,7 +10,7 @@ import {
   DiPhp,
   DiMysql,
 } from "react-icons/di";
-import { SiRedis, SiExpress } from "react-icons/si";
+import {  SiExpress } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiJavascript } from "react-icons/si";
 

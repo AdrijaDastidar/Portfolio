@@ -85,8 +85,8 @@ button:focus {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
-  font-size: 1.2rem !important;
+  padding: 0.2rem 1rem !important;
+  font-size: 1rem !important;
 }
 
 .navbar-toggler {
@@ -251,7 +251,7 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 30px !important;
 }
 
 .home-section {
@@ -261,7 +261,6 @@ button:focus {
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
-  padding-top: 30px !important;
 }
 
 .home-content {
@@ -330,13 +329,13 @@ button:focus {
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  padding-top: 50px !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
 
 .home-about-body {
-  padding-top: 50px;
+  padding-top: 30px;
   font-size: 1.2em !important;
   text-align: left;
 }
@@ -451,7 +450,7 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 80px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
 }
@@ -484,6 +483,9 @@ button:focus {
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
+}
+.project-card .desc {
+  text-align: left !important;
 }
 
 .blog-card-view {
@@ -549,7 +551,7 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 80px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
