@@ -169,7 +169,7 @@ function Projects() {
                   </span>
                 </>
               }
-              ghLink="https://github.com/AdrijaDastidar/Incident-Intel"
+              ghLink="https://github.com/chhavikant-01/incident-intel"
             />
           </Col>
           <h1 className="project-heading">
