@@ -81,7 +81,7 @@ function Projects() {
                 <>
                   <div>
                     <ul className="desc">
-                      <li>Features: User Authentication, CRUD Operations, Artist Dashboard for Song Management.</li>
+                      <li>Features: User and Artist Authentication, CRUD Operations, Artist Dashboard for Song Management.</li>
                       <li>Tools: Git for version control, GitHub Pages for deployment.</li>
                       <li>Technologies: HTML, CSS, JavaScript, PHP, MySql.</li>
                     </ul>
