@@ -221,63 +221,6 @@ function Projects() {
               }
             />
           </Col>
-          <h1 className="project-heading">
-            My <strong className="purple">Experience</strong> Non-Tech
-          </h1>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={cert1}
-              title="Subject Matter Expert"
-              description={
-                <>
-                  <ul className="desc">
-                    <li>
-                      Solved over 2,000 real-time queries in Mathematics and
-                      Python, boosting website traffic for 11th, 12th graders{" "}
-                    </li>
-                    <li>
-                      Produced interactive learning materials, boosting student
-                      satisfaction by 30% and used by 300+ educators across
-                      multiple districts.
-                    </li>
-                  </ul>
-                  <span
-                    className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
-                    style={{ left: "90%", zIndex: 1 }}
-                  >
-                    AUGUST 2022
-                  </span>
-                </>
-              }
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={cert2}
-              title="Human Resources"
-              description={
-                <>
-                  <ul className="desc">
-                    <li>
-                      Handled over 150 employee records and scheduled 300+
-                      interviews, supporting daily HR operations
-                    </li>
-                    <li>
-                      Streamlined recruitment by implementing an online tracking
-                      system, reducing time-to-fill by 40% and increasing
-                      qualified applicants by 25%.
-                    </li>
-                  </ul>
-                  <span
-                    className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
-                    style={{ left: "90%", zIndex: 1 }}
-                  >
-                    AUGUST 2023
-                  </span>
-                </>
-              }
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
