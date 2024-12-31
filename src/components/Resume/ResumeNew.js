@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/resume.pdf";
@@ -19,6 +19,13 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
+        <Row className="mb-4">
+          <Col>
+            <h1 className="project-heading">
+              My <strong className="purple">Resume</strong>
+            </h1>
+          </Col>
+        </Row>
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />

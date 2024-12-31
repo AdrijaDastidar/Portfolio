@@ -1,68 +1,90 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiPhp,
-  DiMysql,
-} from "react-icons/di";
-import {  SiExpress } from "react-icons/si";
-import { AiFillHtml5 } from "react-icons/ai";
-import { SiJavascript } from "react-icons/si";
+import { DiReact, DiNodejs, DiMongodb, DiGit, DiPhp, DiMysql, DiBootstrap, DiPython } from "react-icons/di";
+import { SiExpress, SiJavascript, SiTailwindcss, SiTypescript, SiFlask, SiNeo4J, SiDocker, SiWordpress } from "react-icons/si";
+import { FaAws, FaWix } from "react-icons/fa";
+import TechItem from "./TechItems";  
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>C++</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>Python</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <AiFillHtml5 />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>HTML5</p>
-      </Col>
+    <div>
+      {/* Programming Languages */}
+      <h2>
+        My <strong className="purple">Programming Languages</strong>
+      </h2>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <TechItem Icon={CgCPlusPlus} label="C++" />
+        <TechItem Icon={DiPython} label="Python" />
+      </Row>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <SiJavascript />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>JavaScript</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>React</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>Node.js</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiExpress />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>Express.js</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPhp />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>PHP</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMysql />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>MySQL</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>MongoDB</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-        <p style={{ fontSize: "14px", marginTop: "5px" }}>Git</p>
-      </Col>
-    </Row>
+      {/* Frontend Technologies Heading */}
+      <h2>
+        My <strong className="purple">Frontend</strong> Technologies
+      </h2>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <TechItem Icon={SiJavascript} label="JavaScript" />
+        <TechItem Icon={SiTypescript} label="TypeScript" />
+        <TechItem Icon={DiReact} label="React" />
+        <TechItem Icon={SiTailwindcss} label="Tailwind CSS" />
+        <TechItem Icon={DiBootstrap} label="Bootstrap" />
+      </Row>
+
+      {/* Backend Technologies Heading */}
+      <h2>
+        My <strong className="purple">Backend</strong> Technologies
+      </h2>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <TechItem Icon={SiExpress} label="Express.js" />
+        <TechItem Icon={DiNodejs} label="Node.js" />
+        <TechItem Icon={SiFlask} label="Flask" />
+        <TechItem Icon={DiPhp} label="PHP" />
+      </Row>
+
+      {/* Databases Technologies Heading */}
+      <h2>
+        My <strong className="purple">Database</strong> Technologies
+      </h2>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <TechItem Icon={DiMysql} label="MySQL" />
+        <TechItem Icon={DiMongodb} label="MongoDB" />
+        <TechItem Icon={SiNeo4J} label="Neo4j" />
+      </Row>
+
+      {/* Cloud Technologies Heading */}
+      <h2>
+        My <strong className="purple">Cloud</strong> Technologies
+      </h2>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <TechItem Icon={FaAws} label="AWS" />
+        <TechItem Icon={SiDocker} label="Docker" />
+      </Row>
+
+      {/* AI and ML Technologies Heading */}
+      <h2>
+        My <strong className="purple">AI/ML</strong> Technologies
+      </h2>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <TechItem imgSrc="https://huggingface.co/front/assets/huggingface_logo.svg" imgAlt="Hugging Face Logo" label="Hugging Face" />
+      </Row>
+
+      {/* CMS Technologies Heading */}
+      <h2>
+        My <strong className="purple">CMS</strong> Technologies
+      </h2>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <TechItem Icon={SiWordpress} label="WordPress" />
+        <TechItem Icon={FaWix} label="Wix" />
+      </Row>
+
+      {/* Version Control */}
+      <h2>
+        My <strong className="purple">Version Control</strong> Technologies
+      </h2>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <TechItem Icon={DiGit} label="Git" />
+      </Row>
+    </div>
   );
 }
 

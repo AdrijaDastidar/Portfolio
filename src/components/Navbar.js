@@ -9,6 +9,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -79,6 +80,19 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <HiOutlineOfficeBuilding
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Experience
               </Nav.Link>
             </Nav.Item>
 
