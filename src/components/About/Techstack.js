@@ -60,14 +60,6 @@ function Techstack() {
         <TechItem Icon={SiDocker} label="Docker" />
       </Row>
 
-      {/* AI and ML Technologies Heading */}
-      <h2>
-        My <strong className="purple">AI/ML</strong> Technologies
-      </h2>
-      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-        <TechItem imgSrc="https://huggingface.co/front/assets/huggingface_logo.svg" imgAlt="Hugging Face Logo" label="Hugging Face" />
-      </Row>
-
       {/* CMS Technologies Heading */}
       <h2>
         My <strong className="purple">CMS</strong> Technologies
