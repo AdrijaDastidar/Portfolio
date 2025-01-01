@@ -154,15 +154,16 @@ function Experience() {
                   <div className="d-flex justify-content-between align-items-start">
                     <div>
                       <Card.Title className="purple d-flex align-items-center">
-                        <FaBriefcase className="mr-2 my-2 mx-4" />{" "}
+                        <FaBriefcase className="mr-2 my-2 mx-4" />
                         {experience.title}
                       </Card.Title>
                       <Card.Subtitle className="mb-2 text-muted d-flex align-items-center">
-                        <FaCalendarAlt className="mr-2 my-2 mx-4" />{" "}
+                        <FaCalendarAlt className="mr-2 my-2 mx-4" />
                         {experience.period} · {experience.duration}
                       </Card.Subtitle>
                       <Card.Text className="text-muted d-flex align-items-center">
-                        <FaMapMarkerAlt className="mr-2 my-2 mx-4" />{" "}
+                        <FaMapMarkerAlt className="mr-2 my-2 mx-4" />
+                        <strong>{experience.company}</strong>&nbsp;&nbsp;
                         {experience.location}
                       </Card.Text>
                     </div>
@@ -178,7 +179,7 @@ function Experience() {
                     </div>
                   ))}
                   <div className="tags-wrapper mt-3">
-                    {experience.tags.slice(0, 10).map((tag, idx) => (
+                    {experience.tags.map((tag, idx) => (
                       <Badge
                         variant="secondary"
                         className="ml-1 mx-2 my-2"
@@ -187,11 +188,6 @@ function Experience() {
                         {tag}
                       </Badge>
                     ))}
-                    {experience.tags.length > 6 && (
-                      <Badge variant="info">
-                        +{experience.tags.length - 6} more
-                      </Badge>
-                    )}
                   </div>
                 </Card.Body>
               </Card>
