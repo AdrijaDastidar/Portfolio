@@ -2,10 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/profile.jpg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -18,18 +15,23 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I am a dynamic and adaptive B.Tech Computer Science and
-              Engineering student with expertise in programming technologies
-              like C, C++, and Python, and development technologies like HTML,
-              CSS, and JavaScript. I am also proficient in backend technologies
-              such as PHP, React.js, Node.js, Express.js, and databases like
-              MySQL and MongoDB, alongside version control using Git.
+              I'm Adrija Dastidar, a Computer Science and Engineering student at
+              MIT-WPU with a passion for creating impactful solutions at the
+              intersection of machine learning and web technologies. As a 4x
+              Hackathon winner—including HackMIT and Infosys iAccelerate—I
+              thrive on solving real-world problems through innovation and
+              collaboration.
               <br />
               <br />
-              With certifications in Web Development, Artificial Intelligence,
-              and Data Science, I consistently strive for excellence and
-              innovation. My strong communication and teamwork skills further
-              enhance my ability to deliver outstanding results.
+              My experience spans AI chatbots, real-time dashboards, and
+              intelligent systems, developed during internships at Infosys and
+              BasketHunt.
+              <br />
+              <br />
+              From building a Virtual Teaching Assistant that generates live
+              quizzes to designing defense intelligence dashboards, I focus on
+              blending creativity with technical precision. I’m always exploring new
+              technologies and believe in using code to drive change.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

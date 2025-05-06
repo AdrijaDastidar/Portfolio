@@ -11,21 +11,59 @@ import incidentintel from "../../Assets/Projects/incidentintel.png";
 import spamDetection from "../../Assets/Projects/spamDetection.png";
 import MediTrain from "../../Assets/Projects/MediTrain.png";
 import MovieMatrix from "../../Assets/Projects/MovieMatrix.png";
-import cert2 from "../../Assets/Certificates/s6.png";
-import cert1 from "../../Assets/Certificates/s5.png";
+import vta from "../../Assets/Projects/VTA.png";
+import chat from "../../Assets/Projects/chat.png";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
-      <h1 className="project-heading">
+        <h1 className="project-heading">
           My Recent <strong className="purple">Works</strong>
         </h1>
         <div style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </div>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={5} className="project-card">
+            <ProjectCard
+              imgPath={vta}
+              title="Virtual Teaching Assistant - VTA"
+              description={
+                <>
+                  <div>
+                    <ul className="desc">
+                      <li>
+                        Features: Audio-to-text transcription (using Whisper),
+                        automated summarization and quiz generation (powered by
+                        LLMs via LangChain), PDF parsing, and Express +
+                        PostgreSQL backend integration.
+                      </li>
+                      <li>
+                        Technologies: Python, Flask, LangChain, Groq LLM
+                        (LLaMA3), PostgreSQL, Express.js, FFmpeg, Whisper, and
+                        PDFPlumber.
+                      </li>
+                      <li>
+                        Tools: Waitress for production server, CORS for secure
+                        API access, Docker-ready structure, deployed locally for
+                        edge-side performance.
+                      </li>
+                    </ul>
+                  </div>
+                  <span
+                    className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
+                    style={{ left: "90%", zIndex: 1 }}
+                  >
+                    March 2025
+                  </span>
+                </>
+              }
+              ghLink="https://github.com/AdrijaDastidar/Virtual-Teaching-Assistant"
+            />
+          </Col>
+
           <Col md={5} className="project-card">
             <ProjectCard
               imgPath={MovieMatrix}
@@ -54,7 +92,7 @@ function Projects() {
                     className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
                     style={{ left: "90%", zIndex: 1 }}
                   >
-                    October 2024
+                    December 2024
                   </span>
                 </>
               }
@@ -90,7 +128,7 @@ function Projects() {
                     className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
                     style={{ left: "90%", zIndex: 1 }}
                   >
-                  December 2024
+                    December 2024
                   </span>
                 </>
               }
@@ -123,11 +161,46 @@ function Projects() {
                     className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
                     style={{ left: "90%", zIndex: 1 }}
                   >
-                    August 2024
+                    October 2024
                   </span>
                 </>
               }
               ghLink="https://github.com/AdrijaDastidar/spam-detection"
+            />
+          </Col>
+
+          <Col md={5} className="project-card">
+            <ProjectCard
+              imgPath={chat} 
+              title="TCP Chat Application"
+              description={
+                <>
+                  <div>
+                    <ul className="desc">
+                      <li>
+                        Features: Real-time two-way messaging using TCP sockets,
+                        built-in disconnection handling, command-line based UI,
+                        and graceful shutdown via custom exit command.
+                      </li>
+                      <li>
+                        Technologies: C++, Winsock2 API, Windows Console,
+                        low-level networking, and multi-threaded support ready.
+                      </li>
+                      <li>
+                        Tools: Visual Studio for development, `ws2_32.lib` for
+                        linking Winsock, tested locally over localhost.
+                      </li>
+                    </ul>
+                  </div>
+                  <span
+                    className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
+                    style={{ left: "90%", zIndex: 1 }}
+                  >
+                    August 2025
+                  </span>
+                </>
+              }
+              ghLink="https://github.com/your-username/cpp-chat" 
             />
           </Col>
 
@@ -188,7 +261,7 @@ function Projects() {
                     className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
                     style={{ left: "90%", zIndex: 1 }}
                   >
-                    January 2024
+                    March 2024
                   </span>
                 </>
               }
@@ -219,14 +292,14 @@ function Projects() {
                     className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
                     style={{ left: "90%", zIndex: 1 }}
                   >
-                    March 2024
+                    January 2024
                   </span>
                 </>
               }
               ghLink="https://github.com/AdrijaDastidar/Readics-React"
             />
           </Col>
-          
+
           <Col md={5} className="project-card">
             <ProjectCard
               imgPath={texto}
@@ -250,7 +323,7 @@ function Projects() {
                     className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
                     style={{ left: "90%", zIndex: 1 }}
                   >
-                    March 2024
+                    November 2023
                   </span>
                 </>
               }
@@ -281,7 +354,7 @@ function Projects() {
                     className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
                     style={{ left: "90%", zIndex: 1 }}
                   >
-                    October 2023
+                    August 2023
                   </span>
                 </>
               }
